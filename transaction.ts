@@ -36,7 +36,7 @@ function initTransaction(SECRET_KEY, params) {
       // when finished getting the data
       res.on("end", () => {
         // console.log(JSON.parse(data));
-        let parsedData = JSON.parse(data); // ! PRECAUTION: make sure to add a null/bad data exception 
+        let parsedData = JSON.parse(data); // ! PRECAUTION: please make sure to add a null/bad data exception 
         console.log(parsedData);
 
         console.log("[i] REQUEST COMPLETE");
